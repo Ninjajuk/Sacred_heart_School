@@ -14,7 +14,7 @@ function App() {
       transition={{ duration: 0.8, ease: "easeOut" }}
       className="p-5 bg-blue-500 text-white rounded-md"
     >
-      Hello, Framer Motion!
+      Hello, Sacred Heart School!
     </motion.div>
       </div>
       <div class="h-[calc(100vh-40rem)] bg-gray-200">Remaining Height</div>
