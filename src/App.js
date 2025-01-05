@@ -17,7 +17,7 @@ function App() {
       Hello, Sacred Heart School!
     </motion.div>
       </div>
-      <div class="h-[calc(100vh-40rem)] bg-gray-200">Remaining Height</div>
+      {/* <div class="h-[calc(100vh-40rem)] bg-gray-200">Remaining Height</div> */}
 
 
     </div>
