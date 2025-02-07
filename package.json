@@ -1,9 +1,10 @@
 {
-  "name": "armoro",
+  "name": "shs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@heroicons/react": "^2.2.0",
     "clsx": "^2.1.1",
     "cra-template": "1.2.0",
     "framer-motion": "^11.15.0",
