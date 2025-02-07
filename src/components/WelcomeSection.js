@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const WelcomeSection = () => {
   return (
-    <section className="relative bg-gradient-to-r from-purple-900 to-indigo-900 text-white px-6 py-12 md:px-16 lg:flex lg:items-center lg:justify-between overflow-hidden">
+    <section className="relative bg-gradient-to-r from-purple-900 to-indigo-900 text-white lg:px-[10rem] py-12 md:px-16 lg:flex lg:items-center lg:justify-between overflow-hidden">
       {/* Background Diagonal Shape */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-900 via-purple-800 to-blue-900 bg-pattern-dots z-0"></div>
 

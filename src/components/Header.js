@@ -15,7 +15,7 @@ const Header = () => {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white shadow-2xl sticky top-0 w-full z-50 rounded-b-2xl "
+      className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white shadow-2xl sticky top-0 w-full z-50 rounded-b-2xl lg:px-[10rem]"
     >
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
@@ -26,7 +26,7 @@ const Header = () => {
         {/* Navigation Menu */}
         <nav className="relative">
           <ul
-            className={`md:flex space-x-6 ${
+            className={`md:flex space-x-2 ${
               isMenuOpen ? "block" : "hidden"
             } md:block absolute md:static top-16 left-0 w-full md:w-auto bg-purple-800 md:bg-transparent text-center md:text-left rounded-md md:rounded-none shadow-lg md:shadow-none transition-all duration-500 ease-in-out`}
           >

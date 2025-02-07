@@ -1,7 +1,45 @@
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
+    const jobProfiles = [
+        "Sacred Heart School",
+        "Best School in Umrangso",
+        "Best Performer"
+      ];
+    
+      const [headerText, setHeaderText] = useState("");
+      const [currentIndex, setCurrentIndex] = useState(0);
+      const [charIndex, setCharIndex] = useState(0);
+      const [isDeleting, setIsDeleting] = useState(false);
+      
+      useEffect(() => {
+        const currentWord = jobProfiles[currentIndex];
+        const typingSpeed = isDeleting ? 50 : 100; // Faster when deleting
+    
+        const timeout = setTimeout(() => {
+          if (!isDeleting && charIndex < currentWord.length) {
+            // Typing effect
+            setHeaderText((prev) => prev + currentWord[charIndex]);
+            setCharIndex(charIndex + 1);
+          } else if (isDeleting && charIndex > 0) {
+            // Deleting effect
+            setHeaderText((prev) => prev.slice(0, -1));
+            setCharIndex(charIndex - 1);
+          } else if (!isDeleting && charIndex === currentWord.length) {
+            // Pause before starting to delete
+            setTimeout(() => setIsDeleting(true), 1000);
+          } else if (isDeleting && charIndex === 0) {
+            // Move to the next word after deleting
+            setIsDeleting(false);
+            setCurrentIndex((prev) => (prev + 1) % jobProfiles.length);
+          }
+        }, typingSpeed);
+    
+        return () => clearTimeout(timeout);
+      }, [charIndex, isDeleting, currentIndex]);
+
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-500 to-purple-600  text-white overflow-hidden">
       {/* Background Glow */}
@@ -29,7 +67,7 @@ export default function HeroSection() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        Welcome to <span className="text-yellow-300">Sacred Heart School</span>
+        Welcome to <span className="text-yellow-300">{headerText}</span>
       </motion.h1>
 
       {/* Subtitle */}
