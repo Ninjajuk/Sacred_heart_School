@@ -145,6 +145,7 @@ import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
 import { motion } from 'framer-motion';
 import { FaPalette, FaChartLine, FaFlask } from 'react-icons/fa'; // Import icons for streams
+import Footer from '../components/Footer';
 
 const FeeStructurePage = () => {
     const fees = [
@@ -303,7 +304,7 @@ const FeeStructurePage = () => {
                         </a>
                     </motion.div>
                 </main>
-
+                <Footer/>
                 <div className='mt-auto'>
                     <CopyrightFooter />
                 </div>

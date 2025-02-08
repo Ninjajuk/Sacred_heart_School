@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import CopyrightFooter from '../components/CopyrightFooter'
 import { motion } from "framer-motion";
+import Footer from '../components/Footer';
 
 const facultyMembers = [
     {
@@ -113,6 +114,7 @@ const FacultyPage = () => {
                     ))}
                 </div>
             </motion.section>
+            <Footer/>
             <CopyrightFooter />
         </>
     )

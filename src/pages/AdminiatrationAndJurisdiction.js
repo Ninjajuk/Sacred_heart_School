@@ -126,6 +126,7 @@ import { motion } from 'framer-motion';
 import CopyrightFooter from '../components/CopyrightFooter';
 import Header from '../components/Header';
 import { FaChurch, FaUserTie, FaHandsHelping, FaSchool, FaCalendarAlt } from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 const AdminiatrationAndJurisdiction = () => {
     return (
@@ -266,6 +267,7 @@ const AdminiatrationAndJurisdiction = () => {
             </motion.section>
 
             {/* Footer */}
+            <Footer/>
             <div className="mt-auto">
                 <CopyrightFooter />
             </div>

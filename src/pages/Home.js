@@ -9,6 +9,8 @@ import FloatingNewsEvents from '../components/FloatingNews'
 import ImageGallery from '../components/Gallary'
 import Toppers from '../components/Toppers'
 import {motion} from 'framer-motion'
+import Footer from '../components/Footer'
+
 const HomePage = () => {
   return (
     <>
@@ -19,6 +21,7 @@ const HomePage = () => {
           <FloatingNewsEvents/>
           <PrincipalMessage/>
           <Toppers/>
+     
           <ImageGallery/>
                              {/* FAQ Section */}
                              <motion.section
@@ -78,6 +81,7 @@ const HomePage = () => {
                     </motion.section>
           {/* <Skills/>
       <DynamicForm/> */}
+      <Footer/>
           <CopyrightFooter />
     </>
   )

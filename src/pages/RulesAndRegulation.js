@@ -153,6 +153,7 @@ import CopyrightFooter from '../components/CopyrightFooter';
 import Header from '../components/Header';
 import { FaBullseye, FaLightbulb, FaHandsHelping, FaUsers, FaHeart, FaBan, FaTools, FaBookOpen, FaGavel, FaUserShield } from 'react-icons/fa'; // Import icons from react-icons
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 const RulesAndRegulation = () => {
     const disciplineItems = [
@@ -405,6 +406,8 @@ const RulesAndRegulation = () => {
             </motion.section>
 
             {/* Footer */}
+            
+            <Footer/>
             <div className="mt-auto">
                 <CopyrightFooter />
             </div>

@@ -110,10 +110,12 @@ const Header = () => {
                   <a href="academic-uniform">Uniform</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  Syllabus
+                  <a href="/academic-syllabus">Syllabus</a>
+                  
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  Examinations
+                  <a href="/academic-examinations">Examinations</a>
+                  
                 </li>
               </motion.ul>
             </li>
@@ -151,7 +153,8 @@ const Header = () => {
                   <a href="/admission-eligibility">Eligibility</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  Important Dates
+                  <a href="/admission-important-dates">Important Dates</a>
+                  
                 </li>
               </motion.ul>
             </li>

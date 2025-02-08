@@ -90,6 +90,7 @@ import React from 'react';
 import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
 import { motion } from 'framer-motion';
+import Footer from '../components/Footer';
 
 const IntroductionPage = () => {
   return (
@@ -245,6 +246,7 @@ const IntroductionPage = () => {
       </motion.section>
 
       {/* Footer */}
+      <Footer/>
       <div className="mt-auto">
         <CopyrightFooter />
       </div>

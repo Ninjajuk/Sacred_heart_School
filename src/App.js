@@ -17,6 +17,9 @@ import ApplicationProcessPage from './pages/ApplicationProcessPage';
 import AdmissionProcedure from './pages/AdmissionProcedure';
 import RulesAndRegulation from './pages/RulesAndRegulation';
 import GallaryPage from './pages/GallaryPage';
+import ExaminationPage from './pages/ExaminationPage';
+import SyllabusPage from './pages/SyallabusPage';
+import ImportantDatesPage from './pages/ImportantDatePage';
 
 
 
@@ -39,9 +42,12 @@ function App() {
         <Route path="/academic-fee-structure" element={<FeeStructurePage />} />
         <Route path="/academic-faculty" element={<FacultyPage />} />
         <Route path="/academic-uniform" element={<UniformPage />} />
+        <Route path="/academic-syllabus" element={<SyllabusPage />} />
+        <Route path="/academic-examinations" element={<ExaminationPage />} />
         <Route path="/admission-eligibility" element={<AdmissionEligibilty />} />
         <Route path="/admission-application-procedure" element={<ApplicationProcessPage />} />
         <Route path="/admission-admission-procedure" element={<AdmissionProcedure />} />
+        <Route path="/admission-important-dates" element={<ImportantDatesPage />} />
         <Route path="/rules-regulations" element={<RulesAndRegulation />} />
         <Route path="/gallary" element={<GallaryPage />} />
         <Route path="/contact-us" element={<ContactusPage />} />

@@ -141,6 +141,7 @@ import { motion } from 'framer-motion';
 import { FaBook, FaChartLine, FaFlask, FaPalette, FaCalculator, FaLandmark, FaPenFancy, FaGlobe } from 'react-icons/fa';
 import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
+import Footer from '../components/Footer';
 
 const courses = [
   {
@@ -282,6 +283,7 @@ const CourseOfStudyPage = () => {
       </motion.section>
 
       {/* Footer */}
+      <Footer/>
       <div className="mt-auto">
         <CopyrightFooter />
       </div>

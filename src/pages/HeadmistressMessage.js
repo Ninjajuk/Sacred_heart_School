@@ -126,6 +126,7 @@ import CopyrightFooter from '../components/CopyrightFooter';
 import Header from '../components/Header';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaSchool, FaUserAlt } from 'react-icons/fa';
+import Footer from '../components/Footer';
 
 const HeadmistressMessage = () => {
   return (
@@ -254,6 +255,7 @@ const HeadmistressMessage = () => {
       </motion.section>
 
       {/* Footer */}
+      <Footer/>
       <div className="mt-auto">
         <CopyrightFooter />
       </div>

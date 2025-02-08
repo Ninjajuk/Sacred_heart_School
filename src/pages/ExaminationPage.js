@@ -1,18 +1,18 @@
 import React from 'react'
 import Header from '../components/Header'
 import CopyrightFooter from '../components/CopyrightFooter'
-import ImageGallery from '../components/Gallary'
+import Examination from '../components/Examination'
 import Footer from '../components/Footer'
 
-const GallaryPage = () => {
+const ExaminationPage = () => {
   return (
     <>
     <Header/>
-    <ImageGallery/>
+    <Examination/>
     <Footer/>
     <CopyrightFooter/>
     </>
   )
 }
 
-export default GallaryPage
+export default ExaminationPage

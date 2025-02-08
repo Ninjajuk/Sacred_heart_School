@@ -162,6 +162,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
 import { motion, AnimatePresence } from "framer-motion";
+import Footer from '../components/Footer';
 
 const images = [
     "https://www.donboscohsdiphu.in/Images/innerbg/Uniform-1.jpg",
@@ -434,7 +435,7 @@ const UniformPage = () => {
                         </div>
                     </motion.section>
                 </section>
-
+                <Footer/>
                 <div className='mt-auto'>
                     <CopyrightFooter />
                 </div>

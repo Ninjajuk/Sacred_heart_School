@@ -147,6 +147,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
+import Footer from '../components/Footer';
 
 const AdmissionEligibility = () => {
     return (
@@ -395,6 +396,7 @@ const AdmissionEligibility = () => {
             </motion.section>
 
             {/* Footer */}
+            <Footer/>
             <div className="mt-auto">
                 <CopyrightFooter />
             </div>

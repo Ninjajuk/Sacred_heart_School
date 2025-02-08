@@ -105,6 +105,7 @@ import { motion } from "framer-motion";
 import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import Footer from '../components/Footer';
 
 const ContactusPage = () => {
   return (
@@ -352,7 +353,7 @@ const ContactusPage = () => {
           </motion.section>
         </section>
       </main>
-
+      <Footer/>
       <CopyrightFooter />
     </div>
   );

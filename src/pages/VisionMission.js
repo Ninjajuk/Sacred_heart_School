@@ -183,6 +183,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import CopyrightFooter from '../components/CopyrightFooter';
 import { FaBullseye, FaLightbulb, FaHandsHelping, FaUsers, FaHeart } from 'react-icons/fa'; // Import icons from react-icons
+import Footer from '../components/Footer';
 
 const VisionMission = () => {
   const missionItems = [
@@ -368,6 +369,7 @@ const VisionMission = () => {
       </motion.section>
 
       {/* Footer */}
+      <Footer/>
       <div className="mt-auto">
         <CopyrightFooter />
       </div>
