@@ -13,24 +13,27 @@ const WelcomeSection = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
+          aria-label="Welcome to Sacred Heart Higher Secondary School"
         >
           Welcome to Sacred Heart Higher Secondary School
         </motion.h1>
         <motion.p 
-          className="mt-4 text-sm text-lg"
+          className="mt-4 text-sm md:text-lg"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
+          aria-label="School description"
         >
           Sacred Heart Higher Secondary School, Umrangso, affiliated to the state Board of Education, Assam, is situated at Rongkhelan, Umrangso, in Dima Hasao Autonomous District. The school was established in 1969 by the unforgettable and saintly, missionary educator, Rev. Fr. John Mariae.
         </motion.p>
         <motion.button
-          className="mt-6 bg-yellow-400 text-red-900 px-6 py-3 rounded-md shadow-lg hover:bg-yellow-500 transition duration-300"
+          className="mt-6 bg-yellow-400 text-red-900 px-6 py-3 rounded-md shadow-lg hover:bg-yellow-500 transition duration-300 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
           whileHover={{ scale: 1.1, rotate: 2 }}
           whileTap={{ scale: 0.95 }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
+          aria-label="Read more about Sacred Heart Higher Secondary School"
         >
           READ MORE
         </motion.button>
@@ -42,11 +45,13 @@ const WelcomeSection = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2, ease: "easeOut", delay: 0.8 }}
+        aria-label="Students image"
       >
         <img 
           src="https://www.donboscohsdiphu.in/images/1.png" 
           alt="Students" 
-          className="w-full max-w-md mx-auto"
+          className="w-full max-w-md mx-auto rounded-lg shadow-2xl"
+          loading="lazy"
         />
       </motion.div>
 

@@ -4,27 +4,26 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const BannerSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Image URLs
+
   const images = [
     "https://www.donboscohsdiphu.in/Images/slide1.jpg",
     "https://www.donboscohsdiphu.in/Images/slide3.jpg",
-    "https://www.donboscohsdiphu.in/Images/slide3.jpg",
+    "https://www.donboscohsdiphu.in/Images/slide2.jpg",
+   
     // "https://images.pexels.com/photos/6307071/pexels-photo-6307071.jpeg?auto=compress&cs=tinysrgb&w=600",
     // "https://images.pexels.com/photos/169203/pexels-photo-169203.jpeg?auto=compress&cs=tinysrgb&w=600",
     // "https://new.caterninja.com/ninja-buffy/header/Frame%20770.webp",
     // "https://images.pexels.com/photos/157879/gift-jeans-fashion-pack-157879.jpeg?auto=compress&cs=tinysrgb&w=600",
   ];
 
-  // Handle next image
-  const handleNext = () => {
+   // Handle next image
+   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
   // Handle previous image
   const handleBack = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    );
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
   return (
