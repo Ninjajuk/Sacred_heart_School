@@ -7,7 +7,7 @@ const WelcomeSection = () => {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-900 via-purple-800 to-blue-900 bg-pattern-dots z-0"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-2xl">
+      <div className="relative z-10 max-w-2xl p-2">
         <motion.h1 
           className="text-3xl md:text-4xl font-bold"
           initial={{ opacity: 0, y: -50 }}
@@ -17,7 +17,7 @@ const WelcomeSection = () => {
           Welcome to Sacred Heart Higher Secondary School
         </motion.h1>
         <motion.p 
-          className="mt-4 text-lg"
+          className="mt-4 text-sm text-lg"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}

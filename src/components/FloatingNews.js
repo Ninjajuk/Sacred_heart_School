@@ -29,6 +29,7 @@ const FloatingNewsEvents = () => {
 
   return (
     <div className="container mx-auto py-4 lg:px-[10rem] bg-gray-200">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-red-900 via-purple-800 to-blue-900 bg-pattern-dots z-0"></div>
       <h2 className="text-2xl font-extrabold text-purple-800 mb-4 text-center bg-gray-50 p-4 rounded-md">Latest Updates</h2>
       <div className="flex flex-col md:flex-row gap-6">
         {/* News Section */}
@@ -56,7 +57,7 @@ const FloatingNewsEvents = () => {
         </div>
 
         {/* Events Section */}
-        <div className="flex-1 relative bg-white p-4 rounded-lg shadow-md border border-gray-300 overflow-hidden bg-pattern-dots">
+        <div className="flex-1 relative bg-white p-4 rounded-lg shadow-md border border-gray-300 overflow-hidden ">
           <h3 className="text-lg font-bold text-gray-800 mb-3 text-center">Events</h3>
           <div 
             className="relative h-72 overflow-hidden"
