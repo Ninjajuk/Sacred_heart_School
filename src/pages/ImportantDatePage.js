@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const ImportantDatesPage = () => {
-  const [view, setView] = useState("list"); // Toggle between "list" and "calendar" view
+  const [view, setView] = useState("list"); 
 
   const importantDates = [
     {
