@@ -98,16 +98,16 @@ const Header = () => {
                   } md:group-hover:block`}
               >
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  <a href="academic-course">Courses</a>
+                  <a href="/academic-course">Courses</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  <a href="academic-fee-structure">Fee Structure</a>
+                  <a href="/academic-fee-structure">Fee Structure</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  <a href="academic-faculty">Faculty</a>
+                  <a href="/academic-faculty">Faculty</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  <a href="academic-uniform">Uniform</a>
+                  <a href="/academic-uniform">Uniform</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
                   <a href="/academic-syllabus">Syllabus</a>
@@ -147,7 +147,7 @@ const Header = () => {
                   } md:group-hover:block`}
               >
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                  <a href="admission-application-procedure">Application Process</a>
+                  <a href="/admission-application-procedure">Application Process</a>
                 </li>
                 <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
                   <a href="/admission-eligibility">Eligibility</a>
@@ -269,13 +269,13 @@ const Header = () => {
                       <a href='/administration-jurisdiction'>Administration & Jurisdiction</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="vission-mission">Vision & Mission</a>
+                      <a href="/vission-mission">Vision & Mission</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="principal-message">Principal’s Message</a>
+                      <a href="/principal-message">Principal’s Message</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="headmistress-message">Headmistress’ Message</a>
+                      <a href="/headmistress-message">Headmistress’ Message</a>
                     </li>
                   </ul>
                 )}
@@ -300,22 +300,23 @@ const Header = () => {
                 {openSubMenu === "academics" && (
                   <ul className="pl-4">
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="academic-course">Courses</a>
+                      <a href="/academic-course">Courses</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="academic-fee-structure">Fee Structure</a>
+                      <a href="/academic-fee-structure">Fee Structure</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="academic-faculty">Faculty</a>
+                      <a href="/academic-faculty">Faculty</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="academic-uniform">Uniform</a>
+                      <a href="/academic-uniform">Uniform</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
                       Syllabus
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      Examinations
+                      <a href="/academic-examinations">Examinations</a>
+                      
                     </li>
                   </ul>
                 )}
@@ -340,13 +341,13 @@ const Header = () => {
                 {openSubMenu === "admissions" && (
                   <ul className="pl-4">
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      <a href="admission-application-procedure">Application Process</a>
+                      <a href="/admission-application-procedure">Application Process</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
                       <a href="/admission-eligibility">Eligibility</a>
                     </li>
                     <li className="px-4 py-2 hover:bg-yellow-400 hover:text-purple-900 transition-colors duration-300">
-                      Important Dates
+                    <a href="/admission-important-dates">Important Dates</a>
                     </li>
                   </ul>
                 )}
