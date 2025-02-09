@@ -86,11 +86,11 @@ const Toppers = () => {
 
                 {/* Right Div - Additional Information */}
                 <div className="h-[400px] w-full rounded-2xl shadow-xl bg-white p-8 flex flex-col justify-center items-center">
-                    <h2 className="text-3xl font-bold text-purple-800 mb-4">Why Choose Us?</h2>
-                    <p className="text-lg text-gray-600 text-center mb-6">
+                    <h2 className="text-xl lg:text-3xl font-bold text-purple-800 mb-4">Why Choose Us?</h2>
+                    <p className="text-md lg:text-lg text-gray-600 text-center mb-6">
                         Our toppers have consistently achieved excellence in their fields. Join us to be part of a legacy of success.
                     </p>
-                    <ul className="list-disc list-inside text-gray-700 space-y-2">
+                    <ul className="list-disc list-inside text-gray-700 space-y-1">
                         <li>Personalized mentorship from top educators.</li>
                         <li>Comprehensive study materials and resources.</li>
                         <li>Regular mock tests and performance analysis.</li>

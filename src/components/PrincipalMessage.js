@@ -231,11 +231,11 @@ const PrincipalMessage = () => {
 
                     {/* Right Div - School Mission and Values */}
                     <div className="h-[500px] w-full rounded-2xl shadow-xl bg-gradient-to-r from-purple-800 to-blue-800 p-8 flex flex-col justify-center items-center text-white">
-                        <h2 className="text-3xl font-bold mb-4">Our Mission & Values</h2>
-                        <p className="text-lg text-center mb-6">
+                        <h2 className="text-lg lg:text-3xl font-bold mb-4">Our Mission & Values</h2>
+                        <p className="text-sm lg:text-lg text-center mb-6">
                             At Sacred Heart Secondary School, we are committed to fostering a culture of excellence, integrity, and compassion.
                         </p>
-                        <ul className="list-disc list-inside space-y-2 text-lg">
+                        <ul className="list-disc list-inside space-y-2 text-sm lg:text-lg">
                             <li>Empowering students to achieve their full potential.</li>
                             <li>Promoting a culture of respect and inclusivity.</li>
                             <li>Encouraging innovation and critical thinking.</li>
