@@ -116,8 +116,10 @@ import { useEffect, useState } from "react";
 export default function HeroSection() {
     const jobProfiles = [
         "Sacred Heart School",
+        "Your Second Home",
         "Best School in Umrangso",
-        "Best Performer"
+        "the Heart of Learning",
+        // "a legacy of Excellence"
     ];
 
     const [headerText, setHeaderText] = useState("");
@@ -165,7 +167,7 @@ export default function HeroSection() {
             {[...Array(10)].map((_, i) => (
                 <motion.div
                     key={i}
-                    className="absolute text-4xl"
+                    className="absolute text-4xl pointer-events-none"
                     style={{
                         top: `${Math.random() * 100}%`,
                         left: `${Math.random() * 100}%`,
@@ -191,7 +193,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.8 }}
             >
                 Welcome to{" "}
-                <span className="text-yellow-300">
+                <span className="text-yellow-500">
                     {headerText}
                     <span className="ml-1 inline-block w-1 h-8 bg-yellow-300 animate-blink">|</span>
                 </span>
@@ -208,25 +210,26 @@ export default function HeroSection() {
             </motion.p>
 
             {/* CTA Buttons */}
-            <motion.div
-                className="mt-6 flex space-x-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.8 }}
-            >
-                <a
-                    href="/admission"
-                    className="bg-yellow-400 text-black hover:bg-yellow-500 px-6 py-3 text-lg font-semibold rounded-lg"
-                >
-                    Apply Now
-                </a>
-                <a
-                    href="/about"
-                    className="bg-transparent border-2 border-white hover:bg-white hover:text-black px-6 py-3 text-lg font-semibold rounded-lg"
-                >
-                    Learn More
-                </a>
-            </motion.div>
+     {/* CTA Buttons */}
+<div className="mt-6 flex space-x-4 z-50">
+    <motion.a
+        href="/admission-application-procedure"
+        className="bg-yellow-500 text-black hover:bg-yellow-800 px-6 py-3 text-lg font-semibold rounded-lg cursor-pointer"
+        whileTap={{ scale: 0.95 }}
+        // onClick={() => console.log("Apply Now clicked")}
+    >
+        Apply Now
+    </motion.a>
+    <motion.a
+        href="/introduction"
+        className="bg-transparent border-2 border-white hover:bg-white hover:text-black px-6 py-3 text-lg font-semibold rounded-lg"
+        whileTap={{ scale: 0.95 }}
+      
+    >
+        Learn More
+    </motion.a>
+</div>
+
 
             {/* Animated Sparkles */}
             <motion.div
